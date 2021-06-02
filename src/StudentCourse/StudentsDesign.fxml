@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="542.0" prefWidth="696.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentCourse.StudentsController">
+   <children>
+      <TableView fx:id="StudentsTable" layoutX="5.0" layoutY="247.0" onMouseClicked="#studentIntoFields" prefHeight="292.0" prefWidth="684.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="139.0" text="ID" />
+          <TableColumn fx:id="name" prefWidth="224.0" text="Name" />
+            <TableColumn fx:id="major" prefWidth="190.0" text="Major" />
+            <TableColumn fx:id="grade" prefWidth="130.0" text="Grade" />
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="24.0" prefHeight="20.0" prefWidth="22.0" text="ID">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="60.0" prefHeight="21.0" prefWidth="42.0" text="Name">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="106.0" prefHeight="21.0" prefWidth="56.0" text="Major">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="147.0" prefHeight="21.0" prefWidth="42.0" text="Grade">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextField" layoutX="84.0" layoutY="22.0" prefHeight="25.0" prefWidth="260.0" />
+      <TextField fx:id="nameTextField" layoutX="84.0" layoutY="58.0" prefHeight="35.0" prefWidth="260.0" />
+      <Slider fx:id="gradeSlider" blockIncrement="1.0" layoutX="83.0" layoutY="157.0" minorTickCount="1" prefHeight="14.0" prefWidth="260.0" showTickLabels="true" showTickMarks="true" value="50.0" />
+      <Label id="gpaLabel" fx:id="gradeLabel" layoutX="348.0" layoutY="148.0" prefHeight="25.0" prefWidth="64.0" />
+      <Button fx:id="addButton" layoutX="551.0" layoutY="103.0" mnemonicParsing="false" onAction="#addStudentHandle" prefHeight="35.0" prefWidth="119.0" text="ADD STUDENT" />
+      <Button fx:id="updateButton" layoutX="554.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateStudentHandle" prefHeight="35.0" prefWidth="119.0" text="UPDATE STUDENT" />
+      <Button fx:id="deleteStudent" layoutX="554.0" layoutY="196.0" mnemonicParsing="false" onAction="#deleteStudentHandle" prefHeight="35.0" prefWidth="119.0" text="DELETE STUDENT" />
+      <ChoiceBox fx:id="courseChoiceBox" layoutX="87.0" layoutY="193.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="27.0" layoutY="195.0" prefHeight="21.0" prefWidth="56.0" text="Course">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" layoutX="419.0" layoutY="149.0" mnemonicParsing="false" onAction="#registerCourse" prefHeight="35.0" prefWidth="119.0" text="REGISTER COURSE" />
+      <Button fx:id="showCourseButton" layoutX="374.0" layoutY="103.0" mnemonicParsing="false" onAction="#showCourseStudents" prefHeight="35.0" prefWidth="166.0" text="SHOW COURSE STUDENTS" />
+      <TextArea fx:id="queryTextArea" layoutX="357.0" layoutY="22.0" prefHeight="72.0" prefWidth="313.0" promptText="Enter a Query to Perform" />
+      <TextField fx:id="majorTextField" layoutX="86.0" layoutY="104.0" prefHeight="25.0" prefWidth="260.0" />
+      <Label layoutX="213.0" layoutY="195.0" prefHeight="21.0" prefWidth="64.0" text="Semester">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="semesterChoiceBox" layoutX="284.0" layoutY="193.0" prefHeight="25.0" prefWidth="119.0" />
+      <Button fx:id="performQuery" layoutX="419.0" layoutY="196.0" mnemonicParsing="false" onAction="#performQueryHandle" prefHeight="35.0" prefWidth="119.0" text="PERFORM QUERY" />
+   </children>
+</AnchorPane>

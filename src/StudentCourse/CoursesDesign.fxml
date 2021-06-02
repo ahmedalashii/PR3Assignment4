@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentCourse.CoursesController">
+   <children>
+      <TableView fx:id="CoursesTable" layoutY="110.0" prefHeight="343.0" prefWidth="621.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="89.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="156.0" text="Name" />
+            <TableColumn fx:id="major" prefWidth="177.0" text="Major" />
+            <TableColumn fx:id="grade" prefWidth="198.0" text="Grade" />
+         </columns>
+      </TableView>
+      <Label id="courseLabel" fx:id="courseLabel" layoutX="20.0" layoutY="14.0" prefHeight="80.0" prefWidth="591.0" />
+      <Button fx:id="showCoursesButton" layoutX="452.0" layoutY="31.0" mnemonicParsing="false" onAction="#showCoursesHandle" prefHeight="42.0" prefWidth="158.0" visible="false" />
+   </children>
+</AnchorPane>

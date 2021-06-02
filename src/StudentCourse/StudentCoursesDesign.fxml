@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="423.0" prefWidth="547.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="StudentCourse.StudentCoursesController">
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="CoursesTable" layoutX="-6.0" prefHeight="423.0" prefWidth="559.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="158.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="240.0" text="Name" />
+            <TableColumn fx:id="room" prefWidth="159.0" text="Room" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
